@@ -10,7 +10,7 @@ from django.views import View
 
 class IndexView(generic.ListView):
     model = Day
-    paginate_by = 3
+    paginate_by = 6
     template_name = 'diary/day_list.html'  # 追加
 
 class AddView(generic.CreateView):
